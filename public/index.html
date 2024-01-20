@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>361 Weather App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <h1 id="title">Enter a Zipcode in the textbox below!</h1>
+        <p id="titlePara">Once entered, submit the zipcode using the right button. If the zipcode is not a valid
+            United States code, you will receive an error. You can also click the weather icon for more information!
+        </p>
+      
+        <div class="card">
+            <div class="search">
+                <input type="text" placeholder="Enter a Zipcode!">
+                <button><img src="images/search.png" alt=""></button>
+                <button style="font-size:24px" id="redo" ><i class="fa fa-undo"></i></button>
+            </div>
+            <div class="error">
+                <p>Invalid Zipcode! Please Try Again.</p>
+            </div>
+            <div class="weather">
+                <img src="images/rain.png" class="weather-icon">
+                <h3 class="more-info"></h3>
+                <h1 class="temp">48°F</h1>
+                <h2 class="city">New York</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="images/humidity.png">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/wind.png">
+                        <div>
+                            <p class="wind">15mph</p>
+                            <p>wind</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
